@@ -16,11 +16,32 @@ For complete documentation please checkout [scikit-tda.org](https://scikit-tda.o
 If you would like to contribute, please reach out to us on [github](https://github.com/scikit-tda), [twitter](https://twitter.com/scikit_tda) or on [Slack](scikit-tda.slack.com).
 
 
-# Setup
+# Install
 
-To install all these libraries
+To install scikit-tda and all it's dependencies:
+
+```bash
+pip install scikit-tda
 ```
-    pip install scikit-tda
+
+# Anaconda
+
+If `pip install` doesn't work in your environment or if you prefer Anaconda for managing environments you can clone this repo and use the `environment.yml` file:
+
+```bash
+cd ~/
+git clone https://github.com/scikit-tda/scikit-tda
+cd `~/scikit-tda
+conda env create -n scikit-tda -f environment.yml
+conda activate scikit-tda
+```
+
+And if you think you may want to edit some of the source code or documentation to contribute back to the tda community:
+
+```bash
+conda activate scikit-tda
+cd ~/scikit-tda
+pip install --editable .
 ```
 
 # Citations
